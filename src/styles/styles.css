@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu&display=swap");
+html,
+body {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #150e1e;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.App {
+  min-height: 100%;
+  background-repeat: repeat;
+  background-size: 6rem;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110px;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.header .logo {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fefffd;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1rem;
+}
+
+.nav__item {
+  font-weight: 600;
+}
+
+.nav__link {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fefffd;
+}
+
+.nav__link:hover {
+  background-color: rgba(255, 176, 37, 0.2);
+  color: #ffb025;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.hero__left {
+  width: 40%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin-right: 3rem;
+}
+
+.hero__left .mandela {
+  width: 90%;
+  height: auto;
+  background-repeat: no-repeat;
+  -webkit-animation: rotate 25s infinite linear;
+          animation: rotate 25s infinite linear;
+}
+
+.hero__right {
+  width: 60%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.hero__right h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 8rem;
+  color: #fefffd;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.hero__right p {
+  font-size: 1.5rem;
+  color: #fefffd;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hero__right a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #ffb025;
+  color: #150e1e;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.hero__right a:hover {
+  background-color: #f19a00;
+}
+
+.social {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__icon + .social__icon {
+  margin-left: 1rem;
+}
+
+.social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__icon a {
+  text-decoration: none;
+  color: #150e1e;
+  width: 24px;
+  height: 24px;
+  background-color: #fefffd;
+  padding: 0.5rem;
+}
+
+.social__icon a:hover {
+  background-color: #ffb025;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 86rem) {
+  .hero,
+  .header {
+    max-width: 60rem;
+  }
+  .hero__right h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 66rem) {
+  .hero,
+  .header {
+    max-width: 40rem;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: calc(100% - 160px);
+  }
+  .hero__left, .hero__right {
+    margin: 0;
+  }
+  .hero .mandela {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 46rem) {
+  .hero,
+  .header {
+    max-width: 40rem;
+    margin: 0;
+  }
+  .header .nav {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .header .nav__list {
+    margin: 0;
+    padding: 0;
+  }
+  .header .nav__link {
+    padding: 0.25rem 0.5rem;
+  }
+  .hero {
+    margin-bottom: 1rem;
+  }
+  .hero__right {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero__right h1 {
+    font-size: 4rem;
+  }
+  .hero__right p {
+    font-size: 1rem;
+  }
+  .social {
+    position: inherit;
+    width: 100%;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social__icon {
+    margin: 1rem;
+  }
+}

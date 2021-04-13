@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu&display=swap");
+
+$dark: #150e1e;
+$light: #fefffd;
+$secondary: #ffb025;
+$fontHeading: "Kaushan Script", cursive;
+$fontPara: "Ubuntu", sans-serif;
+$maxWidth-lg: 80rem;
+$maxWidth-md: 60rem;
+$maxWidth-sm: 40rem;
+
+html,
+body {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: $dark;
+  font-family: $fontPara;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.App {
+  min-height: 100%;
+  background-repeat: repeat;
+  background-size: 6rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  max-width: $maxWidth-lg;
+  margin: auto;
+
+  .logo {
+    font-weight: 600;
+    font-size: 2rem;
+    color: $light;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item + &__item {
+    margin-left: 1rem;
+  }
+
+  &__item {
+    font-weight: 600;
+  }
+
+  &__link {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: $light;
+
+    &:hover {
+      background-color: rgba($color: $secondary, $alpha: 0.2);
+      color: $secondary;
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: $maxWidth-lg;
+  margin: auto;
+
+  &__left {
+    width: 40%;
+    height: max-content;
+    position: relative;
+    margin-right: 3rem;
+
+    .mandela {
+      width: 90%;
+      height: auto;
+      background-repeat: no-repeat;
+      animation: rotate 25s infinite linear;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    height: 100%;
+    margin-top: 2rem;
+
+    h1 {
+      font-family: $fontHeading;
+      font-size: 8rem;
+      color: $light;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $light;
+      font-family: $fontPara;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: $secondary;
+      color: $dark;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1.25rem;
+
+      &:hover {
+        background-color: darken($color: $secondary, $amount: 10);
+      }
+    }
+  }
+}
+
+.social {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icon + &__icon {
+    margin-left: 1rem;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+      width: 24px;
+      height: 24px;
+      background-color: $light;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: $maxWidth-lg + 6rem) {
+  .hero,
+  .header {
+    max-width: $maxWidth-md;
+  }
+  .hero {
+    &__right {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $maxWidth-md + 6rem) {
+  .hero,
+  .header {
+    max-width: $maxWidth-sm;
+  }
+
+  .header {
+    flex-direction: column;
+    height: 160px;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: calc(100% - 160px);
+
+    &__left,
+    &__right {
+      margin: 0;
+    }
+
+    .mandela {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: $maxWidth-sm + 6rem) {
+  .hero,
+  .header {
+    max-width: $maxWidth-sm;
+    margin: 0;
+  }
+
+  .header {
+    .nav {
+      width: fit-content;
+      margin: auto;
+      &__list {
+        margin: 0;
+        padding: 0;
+      }
+      &__link {
+        padding: 0.25rem 0.5rem;
+      }
+    }
+  }
+
+  .hero {
+    margin-bottom: 1rem;
+
+    &__right {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .social {
+    position: inherit;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+
+    &__icon {
+      margin: 1rem;
+    }
+  }
+}
