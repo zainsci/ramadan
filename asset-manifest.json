@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.39c54c22.chunk.css",
-    "main.js": "/static/js/main.35bf2c4b.chunk.js",
-    "main.js.map": "/static/js/main.35bf2c4b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c13fde75.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c13fde75.js.map",
-    "static/js/2.6d3100ab.chunk.js": "/static/js/2.6d3100ab.chunk.js",
-    "static/js/2.6d3100ab.chunk.js.map": "/static/js/2.6d3100ab.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.39c54c22.chunk.css.map": "/static/css/main.39c54c22.chunk.css.map",
-    "static/js/2.6d3100ab.chunk.js.LICENSE.txt": "/static/js/2.6d3100ab.chunk.js.LICENSE.txt"
+    "main.css": "/ramadan/static/css/main.39c54c22.chunk.css",
+    "main.js": "/ramadan/static/js/main.b5d05e3b.chunk.js",
+    "main.js.map": "/ramadan/static/js/main.b5d05e3b.chunk.js.map",
+    "runtime-main.js": "/ramadan/static/js/runtime-main.51ff9a27.js",
+    "runtime-main.js.map": "/ramadan/static/js/runtime-main.51ff9a27.js.map",
+    "static/js/2.6d3100ab.chunk.js": "/ramadan/static/js/2.6d3100ab.chunk.js",
+    "static/js/2.6d3100ab.chunk.js.map": "/ramadan/static/js/2.6d3100ab.chunk.js.map",
+    "index.html": "/ramadan/index.html",
+    "static/css/main.39c54c22.chunk.css.map": "/ramadan/static/css/main.39c54c22.chunk.css.map",
+    "static/js/2.6d3100ab.chunk.js.LICENSE.txt": "/ramadan/static/js/2.6d3100ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c13fde75.js",
+    "static/js/runtime-main.51ff9a27.js",
     "static/js/2.6d3100ab.chunk.js",
     "static/css/main.39c54c22.chunk.css",
-    "static/js/main.35bf2c4b.chunk.js"
+    "static/js/main.b5d05e3b.chunk.js"
   ]
 }
