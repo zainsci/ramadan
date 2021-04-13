@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ramadan/static/css/main.39c54c22.chunk.css",
-    "main.js": "/ramadan/static/js/main.b5d05e3b.chunk.js",
-    "main.js.map": "/ramadan/static/js/main.b5d05e3b.chunk.js.map",
+    "main.js": "/ramadan/static/js/main.cb14d67b.chunk.js",
+    "main.js.map": "/ramadan/static/js/main.cb14d67b.chunk.js.map",
     "runtime-main.js": "/ramadan/static/js/runtime-main.51ff9a27.js",
     "runtime-main.js.map": "/ramadan/static/js/runtime-main.51ff9a27.js.map",
     "static/js/2.6d3100ab.chunk.js": "/ramadan/static/js/2.6d3100ab.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.51ff9a27.js",
     "static/js/2.6d3100ab.chunk.js",
     "static/css/main.39c54c22.chunk.css",
-    "static/js/main.b5d05e3b.chunk.js"
+    "static/js/main.cb14d67b.chunk.js"
   ]
 }
