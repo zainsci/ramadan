@@ -4,7 +4,7 @@ const SocialIcons = () => {
   return (
     <div className="social">
       <div className="social__icon">
-        <a href="http://twitter.com" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/zainsci" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -22,7 +22,7 @@ const SocialIcons = () => {
         </a>
       </div>
       <div className="social__icon">
-        <a href="http://twitter.com" target="_blank" rel="noreferrer">
+        <a href="http://github.com/zainsci" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

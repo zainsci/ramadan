@@ -12,13 +12,23 @@ const Header = () => {
             </a>
           </li>
           <li className="nav__item">
-            <a href="/" className="nav__link">
+            <a
+              href="https://www.twitter.com/zainsci"
+              target="_blank"
+              rel="noreferrer"
+              className="nav__link"
+            >
               Contact
             </a>
           </li>
           <li className="nav__item">
-            <a href="/" className="nav__link">
-              About
+            <a
+              href="https://www.github.com/zainsci"
+              target="_blank"
+              rel="noreferrer"
+              className="nav__link"
+            >
+              Github
             </a>
           </li>
           <li className="nav__item">
@@ -28,7 +38,7 @@ const Header = () => {
               rel="noreferrer"
               className="nav__link"
             >
-              Github
+              Repo
             </a>
           </li>
         </ul>
